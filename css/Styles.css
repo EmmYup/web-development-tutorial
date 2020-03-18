@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color:black;
+    font-weight: 300;
+}
+
+
+.contenedor {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    text-align: justify ;
+    height: 600;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* Header */
+header::before {
+    content: "";
+    display: block;
+}
+
+nav {
+    width: 100%;
+    background: #FF8B00;
+    border-bottom: 5px solid transparent;
+    box-shadow: 5px 5px 25px 0 rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    transition: ease-in-out 0.5s;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    align-items: center;
+    font-size: 25px;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.nav .logop{
+    display: none;
+}
+
+.nav .logo {
+    height: 110px;
+}
+
+.nav .logo img {
+    height: 100%;
+}
+
+.nav .enlaces-header a {
+    color: white;
+    padding: 50px 65px;
+    text-decoration: none;
+}
+
+.nav .enlaces-header a:hover{
+    background-color: #E17B00 ;
+    color: black;
+}
+
+.dropbtn {
+    background-color: #FF8B00;
+    color: white;
+    padding: 50px 65px;
+    font-size: 25px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FF8B00;
+}
+
+.dropdown-content a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #E17B00;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #E17B00;
+    color: black;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header p {
+    font-weight: 100;
+    margin-top: 14px;
+    color: #5D6678;
+}
+
+.contenido-header a {
+    margin: 400px 0 0 0;
+    width: 130px;
+    display: inline-block;
+    background: #1FDE82;
+    text-align: center;
+    color: #fff;
+    padding: 12px 0;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0 8px 32px rgba(31, 222, 130, .46);
+}
+
+/*footer*/
+footer {
+    padding-top: 70px;
+    height: 300px;
+    background: #FF8B00 ;
+    overflow: hidden;
+    margin: auto;
+}
+
+.footerf{
+    display: flex;
+
+}
+.colFooter{
+    width: 50%;
+    text-align: center;
+}
+
+.colFooter h4 {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.colFooter H6{
+    color: white;
+    font-size: 30px;
+}
+
+.colFooter a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    transition: color .3s ease-in-out;
+    margin-bottom: 10px;
+}
+
+.space{
+    background-color:black;
+    height: 1000px;
+}
+
+.colFooter h4{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.social-media i {
+    font-weight: 900;
+    font-size: 35px;
+    display: inline-block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 70%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+}
+
+.social-media i:hover {
+    color:#FF8B00;
+    background-color: white;
+    border-color: white;
+}
+
+@media screen and (max-width:1300px) {
+    nav {
+        width: 100%;
+        background: #FF8B00;
+        border-bottom: 5px solid transparent;
+        box-shadow: 5px 5px 50px 0 rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        transition: ease-in-out 0.5s;
+    }
+    
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        width: 100%;
+        align-items: center;
+        font-size: 15px;
+    }
+    
+    nav a {
+        color: white;
+        padding: 0px 0px;
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .nav .logo {
+        height: 80px;
+        padding: 0 3%;
+    }
+    
+    .nav .logo img {
+        height: 100%;
+    }
+    
+    .nav .enlaces-header a {
+        padding: 55px 25px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav .enlaces-header a:hover{
+        background-color: #E17B00 ;
+        color: black;
+    }
+    
+    .dropbtn {
+        padding: 55px 25px;
+        background-color: #FF8B00;
+        color: white;
+        font-size: 15px;
+        border: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FF8B00;
+    }
+    
+    .dropdown-content a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #E17B00;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #E17B00;
+        color: black;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .nav .logo{
+        display: none;
+    }
+    
+    .nav .logop {
+        padding: 0 3%;
+        display: block;
+        height: 55px;
+    }
+ 
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        height: 120px;
+        width: 100%;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .nav .logop img {
+
+        height: 100%;
+    }
+
+    .nav .enlaces-header a {
+        padding: 55px 15px;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .nav .enlaces-header a:hover{
+        background-color: #E17B00 ;
+        color: black;
+    }
+    
+    .dropbtn {
+        padding: 55px 15px;
+        background-color: #FF8B00;
+        color: white;
+        font-size: 15px;
+        border: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #FF8B00;
+    }
+    
+    .dropdown-content a {
+        font-size: 15px;
+        color: white;
+        text-decoration: none;
+        display: block;
+    }
+    
+    .dropdown-content a:hover {
+        background-color: #E17B00;
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .dropdown:hover .dropbtn {
+        background-color: #E17B00;
+        color: black;
+    }
+
+    footer {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 300px;
+        background: #FF8B00 ;
+        overflow: hidden;
+        margin: auto;
+    }
+    
+    .footerf{
+        display: block;
+        align-items: center;
+    }
+    .colFooter{
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .colFooter h4 {
+        color: white;
+        font-size: 15 px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    
+    .colFooter H6{
+        color: white;
+        font-size: 20px;
+    }
+    
+    .colFooter a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-weight: 300;
+        transition: color .3s ease-in-out;
+        margin-bottom: 10px;
+    }
+    
+    .space{
+        background-color:black;
+        height: 1000px;
+    }
+    
+    .colFooter h4{
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .social-media i {
+        font-weight: 900;
+        font-size: 20px;
+        display: inline-block;
+        color: white;
+        border: 1px solid white;
+        border-radius: 70%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        transition: all ease-in-out .3s;
+        margin-right: 5px;
+    }
+    
+    .social-media i:hover {
+        color:#FF8B00;
+        background-color: white;
+        border-color: white;
+    }
+    
+}
